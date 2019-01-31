@@ -1,0 +1,32 @@
+
+<div class="panel">
+    
+        <div class ="panel-heading">{{title}}</div>
+        <div class="panel-body">
+            <button (click)= "showProduct()">ShowProducts</button>
+        <div class="table-responsive">
+        <table class = "table">
+    
+        <thead>
+            <tr>
+                <th>product id</th>
+                <th>product name </th>
+                    <th>product price</th>
+                    <th>product quantity</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                            <tr *ngFor= "let pro of products">
+                        <td>{{pro.id}}</td>
+                        <td>{{pro.name}}</td>
+                        <td>{{pro.price}}</td>
+                        <td>{{pro.quantity}}</td>
+                        </tr>
+
+
+
+        </tbody>
+        </table>
+        </div>
+        </div>
+        </div>
